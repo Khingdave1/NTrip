@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+       <!-- META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1">
+        <!-- LINKS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        
+        <!-- TITLE -->
+        <title>Wonderful Nigeria</title>
+    </head>
+    <body>
+       <!-- Page Load -->
+        <div class="load-area">
+            <div class="load">
+                <div class="load_bar load_bar--1"></div>
+                <div class="load_bar load_bar--2"></div>
+                <div class="load_bar load_bar--3"></div>
+                <div class="load_bar load_bar--4"></div>
+                <div class="load_bar load_bar--5"></div>
+            </div>
+        </div>
+        <!-- Page Load -->
+       <!-- HEADER -->
+       <div class="container">
+            <!-- HEADER -->
+            <header>
+                <span class="header_logo uppercase">
+                    <img src="img/nig%20logo.png" alt="logo">
+                    Ntrip
+                </span>
+                <div id="mobile-menu">
+                    <p class="uppercase" id="menu">Menu</p>
+                </div>
+                <div class="header_right">
+                    <ul class="nav">
+                        <li class="nav_link"><a href="#">Tour</a></li>
+                        <li class="nav_link"><a href="#">Our history</a></li>
+                        <li class="nav_link"><a href="#">Contacts</a></li>
+                        <li class="nav_link"><a href="#">Q&amp;A</a></li>
+                    </ul>
+                    <div class="header_right_search" id="search-area">
+                        <ion-icon Name="search" id="search-btn"></ion-icon>
+                        <div class="search_popup_area">
+                            <div class="search_popup">
+                                <input type="text" placeholder="Search places...">
+                                <a href=""><ion-icon name="arrow-forward-outline"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- CENTER -->
+            <div class="home_center">
+                <h1 class="home_center_heading">Wonderful <br> Nigeria</h1>
+                <div class="home_center_video">
+                    <a href="#" target="_blank" class="play-btn"><ion-icon name="play"></ion-icon></a>
+                    <span>
+                        <p>See video</p>
+                        <p class="uppercase">Nigeria may 2020</p>
+                    </span>
+                </div>
+                <a href="#" class="btn">Explore</a>
+            </div>
+
+            <!-- SOCAIL -->
+            <div class="home_social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+
+            <!-- PLACES -->
+            <div class="home_places">
+                <div class="home_places_text">
+                    <p>5 best places to visit in Nigeria.</p>
+                    <a href="#">More <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </div>
+                <div class="swiper-container home_places_right">
+                    <div class="swiper-wrapper">
+                        <img src="img/nig2.jpg" alt="places" class="home_places_img swiper-slide">
+                        <img src="img/nig3.jpg" alt="places" class="home_places_img swiper-slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+     <!-- SCRIPT -->   
+     <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+     
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>  
+    </body>
+</html>

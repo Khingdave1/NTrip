@@ -1,0 +1,83 @@
+/* Screens with width of 1200px and above*/
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    .header_right_search {
+        margin-left: 2rem;
+    }
+}
+
+/* Small phones to small tablets: from 632px to 767px */
+@media only screen and (max-width: 767px) {
+    .nav .nav_link {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .header_logo h1 {
+        font-size: 18px;
+    }
+    .header_logo img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Small phones: from 481px to 631px */
+@media only screen and (max-width: 631px) {
+    .header_right {
+        display: grid;
+        position: absolute;
+        top: 7%;
+        right: 5%;
+        z-index: 3;
+        background-color: rgba(90, 90, 90, 0.7);
+        padding: 5px 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 500ms cubic-bezier(.25,0,.25,1);
+    }
+    /* MOBILE MENU START */
+    #mobile-menu {
+        display: block;
+    }
+    .open-menu .header_right {
+        transform: scaleY(1);
+    }
+    /* MOBILE MENU END */
+    .nav .nav_link {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .header_right_search {
+        margin-left: 20px;
+    }
+    .search_popup_area {
+        right: 2%;
+    }
+    .search_popup input {
+        padding: 10px;
+    }
+    .search_popup input::placeholder {
+        font-size: 14px;
+    }
+    .search_popup ion-icon {
+        font-size: 15px;
+    }
+    .home_places {
+        display: none;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .home_center {
+        transform: translate(-30%, -50%);
+    }
+    .home_center h1 {
+        font-size: 35px;
+    }
+}
+
