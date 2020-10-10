@@ -1,4 +1,5 @@
-# Ntrip Landing page for cool and beautiful places in Nigeria
+# Ntrip 
+Landing page for cool and beautiful places in Nigeria
 
 # Features
 Swiper.js
